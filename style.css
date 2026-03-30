@@ -1,26 +1,13 @@
 body {
-  color: white;
+  color: #ffffff;
+  text-shadow:
+  0 0 5px #020000,
+  0 0 10px #020000,
+  0 0 20px #020000,
+  0 0 40px #0a0101;
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.bold {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-/* UNDERLINE */
-.underline {
-  max-width: 100%; 
-  font-family: Arial, Verdana, sans-serif;
-}
-
-p {
-  width: 100%; 
-  max-width: 600px;
-  margin: 10px auto;
-  padding: 5px;
 }
 
 /* TEXT POSITION */
@@ -32,36 +19,6 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-
-  display: grid;
-  grid-template-columns: repeat(2, auto); /* 2 buttons per row */
-  gap: 15px;
-
-  justify-content: center;
-}
-
-ul li a:hover {
-  background-color: #4752c4;
-  transform: translateY(-7px);
-}
-
-ul li a:hover {
-  background-color: rgb(98, 0, 255);
-}
-
-ul li a:active {
-  transform: translateY(0);
-}
-
-ul li a img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
 }
 
 /* BACKGROUND ANIMATION */
@@ -86,46 +43,73 @@ ul li a img {
   border: 0.25rem solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 50px -12px rgba(0px, 0, 0, 0.5);
 }
-/* UI GLOW */
-ul li a:hover {
-  background-color: rgb(195, 0, 255);
-  transform: translateY(-7px);
-  
-  box-shadow: 0 0 10px rgb(98, 0, 255) 
-              0 0 30px rgb(98, 0, 255)
-              0 0 60px rgb(98, 0, 255), 
-              0 0 100px rgba(98, 0, 255);
-  
-  text-shadow: 0 0 5px rgb;
-}
 
-/* BUTTON */
-ul li a {
-  display: flex;
-  padding: 3px;
+/* DISCORD LINK STYLE */
+.discord-link {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 24px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #020000 0%, #050000 100%);
+  border: none;
   border-radius: 8px;
-  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
   text-decoration: none;
-  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgb(255, 0, 0);
+  transition: background 0.2s, transform 0.2s;
 }
 
-ul li a span {
+.discord-link:hover {
+  background: linear-gradient(90deg, #080000 0%, #070000 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgb(10, 0, 0);
+}
+
+.spotify-link {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 24px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #020000 0%, #050000 100%);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgb(255, 0, 0);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.spotify-link:hover {
+  background: linear-gradient(90deg, #080000 0%, #070000 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgb(10, 0, 0);
+}
+
+.paypal-link {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 24px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90deg, #020000 0%, #050000 100%);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgb(255, 0, 0);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.paypal-link:hover {
+  background: linear-gradient(90deg, #080000 0%, #070000 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 24px rgb(10, 0, 0);
+}
+
+.links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 120px;
-  height: 70px;
-
-  background-color: rgb(5, 6, 45);
-  border-radius: 6px;
-  transition: 300ms;
-}
-
-ul li a:hover span {
-  background: none;
-}
-
-ul li a:active {
-  transform: scale(0.9);
+  gap: 16px;
+  margin-top: 24px;
 }
